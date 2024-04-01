@@ -11,10 +11,12 @@ from models.city import City
 from models.amenity import Amenity
 from models.review import Review
 
+
 @app_views.route('/status', methods=['GET'])
 def get_status():
     """Return the status of the API."""
     return jsonify({'status': 'OK'})
+
 
 @app_views.route('/stats', methods=['GET'])
 def get_stats():
